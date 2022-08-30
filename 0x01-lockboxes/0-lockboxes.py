@@ -3,10 +3,10 @@
 
 
 def canUnlockAll(boxes):
-    '''determines if all the boxes can be opened or not
-    Returns:
-        True: all boxes can be opened
-        False: not all boxes can be opened
+    '''Determines if all the boxes can be opened or not
+       Returns:
+          True: all boxes can be opened
+          False: not all boxes can be opened
     '''
     length = len(boxes)
     keys = set()
@@ -18,7 +18,7 @@ def canUnlockAll(boxes):
         opened_boxes.append(i)
         keys.update(boxes[i])
         for key in keys:
-            if key != 0 and key < length and key not in opened_boxes:
+            if key < length and key not in opened_boxes:
                 i = key
                 break
         if oldi != i:
@@ -27,6 +27,6 @@ def canUnlockAll(boxes):
             break
 
     for i in range(length):
-        if i not in opened_boxes and i != 0:
+        if i not in opened_boxes:
             return False
     return True
