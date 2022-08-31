@@ -13,7 +13,7 @@
 * Your code should use the PEP 8 style (version 1.7.x)
 * All your files must be executable
 
-#### Task
+### Task
 
 In a text file, there is a single character **H**. Your text editor can execute only two operations in this file: **Copy All** and **Paste**. Given a number **n**, write a method that calculates the fewest number of operations needed to result in exactly **n H** characters in the file.
 
